@@ -1,0 +1,44 @@
+
+<h1 class ="header">Conference Hall E-Booking</h1><br>
+
+
+<div class="form">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Eater+Caps" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+    .f{
+font-family: Eater Caps;
+    }
+</style>
+
+<%= form_for @register do |f| %>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+  
+
+  
+   
+
+  
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+   
+    <%= f.label :purpose %>
+    <%= f.text_field :purpose %>
+ 
+ <br></br>
+    <%= f.label :start_time %>
+    <%= f.date_select :time %>
+    
+  <br></br>
+ <%= f.label :End_time %>
+    <%= f.datetime_select :endtime %>
+  
+<br></br>
+  
+   <%= f.submit "Submit",class: "btn-submit" %>
+   
+  
+<% end %>
+
+</div>

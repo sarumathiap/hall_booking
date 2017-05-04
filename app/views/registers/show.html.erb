@@ -1,0 +1,46 @@
+
+<table cellpadding="20" align="center">
+  
+    <tr >
+      <th style="text-align: left;">Name</th>
+      <td><%= @register.name %></td>
+        </tr>
+        <tr>
+      <th style="text-align: left;">Email</th>
+        <td><%= @register.email %></td>
+        </tr>
+        <tr>
+    <th style="text-align: left;">Purpose</th>
+     <td><%= @register.purpose %></td>
+     </tr>
+     <tr>
+
+      <th style="text-align: left;">Start time</th>
+      <td><%= @register.time %></td>
+      </tr>
+      <tr>
+      <th style="text-align: left;">End time</th>
+       <td><%= @register.endtime %></td>
+       
+       
+       </tr>
+         <td><%= link_to 'Edit', edit_register_path(@register), class: "btn-submit" %></td>
+        <td><%= link_to 'Delete', @register, method: :delete, data: { confirm: 'Are you sure?' },class: "btn-submit" %></td>
+     </table>
+  
+ 
+
+     
+        
+      
+        
+        
+       
+      
+
+
+
+
+
+
+

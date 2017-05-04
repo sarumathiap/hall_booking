@@ -1,0 +1,13 @@
+
+<div class ="form" >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<%= form_for @register , url: register_path(@register),method: :patch  do |f| %>
+<%= f.text_field :name %><br/>
+<%= f.text_field :email %><br/>
+
+<%= f.text_field :purpose %><br/>
+<%= f.text_field :time %><br/>
+<%= f.submit "Update",class: "w3-button w3-yellow w3-round-xlarge" %>
+<% end %>
+</div>

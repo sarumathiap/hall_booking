@@ -1,0 +1,28 @@
+<div class= "form">
+
+<div class= "container">
+
+ <h1>Sign Up</h1>
+  <%= form_for @user do |f| %>
+    </br> <%= f.text_field :name, :placeholder => "name"%> 
+   </br> <%= f.text_field :email, :placeholder => "email"%> 
+   </br> <%= f.password_field :password_digest, :placeholder => "password"%>
+    <%= f.password_field :password_confirmation, :placeholder => "password_confirmation"%>
+
+    <%= f.submit :Create, class: "btn-submit" %>
+  <% end %>
+<hr>
+
+
+
+
+  <% if @user.errors.any? %>
+    <ul class="Signup_Errors">
+    <% for message_error in @user.errors.full_messages %>
+      <li>* <%= message_error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+</div>
+</div>

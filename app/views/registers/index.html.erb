@@ -1,0 +1,30 @@
+<h1 class = "header"> Booked Time</h1><br>
+<table class="table">
+  
+    <tr class="th">
+   
+    <th>Purpose</th>
+      <th>Sart_Time</th>
+      <th>End_Time</th>
+      
+    </tr>
+ 
+
+  
+    <% @registers.each do |register| %>
+      <tr class="tr">
+       
+         <td><%= register.purpose %></td>
+        <td><%= register.time %></td>
+        <td><%= register.endtime %></td>
+   
+      
+       
+      </tr>
+      
+    <% end %>
+ 
+</table>
+
+<br>
+
